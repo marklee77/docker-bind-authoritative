@@ -1,0 +1,9 @@
+version: "3.3"
+services:
+  bind-authoritative:
+    build: ..
+    image: "127.0.0.1:5000/bind-authoritative"
+    volumes:
+      - type: bind
+        source: ./bind
+        target: /var/bind

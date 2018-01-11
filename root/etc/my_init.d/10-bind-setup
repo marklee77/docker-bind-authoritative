@@ -1,0 +1,8 @@
+#!/bin/sh
+
+if ! [ -f /var/bind/zones.conf ]; then
+    echo '/var/bind/zones.conf not found!' >&2
+    exit 1
+fi
+
+chown -R named:named /var/bind

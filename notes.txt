@@ -1,0 +1,20 @@
+- secure dns:
+  http://www.internetsociety.org/deploy360/resources/dnssec-registrars/
+- ldap backend may require jessie
+- DANE?
+  http://www.internetsociety.org/deploy360/resources/dane/
+  https://tools.ietf.org/id/draft-ietf-dane-openpgpkey-12.txt
+- https://www.c0ffee.net/blog/dns-hidden-master
+
+- https://blog.qualys.com/ssllabs/2017/03/13/caa-mandated-by-cabrowser-forum
+- ipv6 support?
+- http://www.internetsociety.org/deploy360/dnssec/tools/
+- https://www.huque.com/bin/openpgpkey
+- https://www.opendnssec.org/
+- web api?
+
+- dkim integration?
+
+- ddos mitigation
+
+- mirroring
