@@ -1,8 +1,18 @@
 #!/bin/sh
+. /usr/local/share/my_init/functions.sh
 
 if ! [ -f /var/bind/zones.conf ]; then
     echo '/var/bind/zones.conf not found!' >&2
     exit 1
 fi
+
+# set secure umask
+umask 027
+
+rndc-confgen -a -c /var/bind/rndc.key
+chown named:named /var/bind/rndc.key
+
+# set normal umask
+umask 022
 
 chown -R named:named /var/bind
