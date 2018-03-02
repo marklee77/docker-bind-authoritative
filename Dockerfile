@@ -26,4 +26,4 @@ EXPOSE 53 53/udp
 
 VOLUME ["/var/bind"]
 
-HEALTHCHECK CMD ["dig", "@localhost", "."]
+HEALTHCHECK CMD ["rndc", "status"]
